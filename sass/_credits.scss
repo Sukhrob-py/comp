@@ -1,0 +1,29 @@
+.credits {
+  margin-bottom: 24px;
+  color: #333333;
+}
+
+.credits__heading {
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 32px;
+}
+
+.credit__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.credit {
+  padding: 24px 0;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.credit__top__heading {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
