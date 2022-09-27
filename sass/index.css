@@ -926,6 +926,203 @@ footer .footer__bottom__payment img {
 }
 .about__right__comments__cards__card__info__bottom__reply {
   display: flex;
+}
+
+@media (max-width: 1000px) {
+  .about {
+    flex-direction: column;
+  }
+  .about__left {
+    width: 100%;
+  }
+  .about__right {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .product__top__title {
+    font-size: 20px;
+  }
+  .about {
+    flex-direction: column;
+  }
+  .about__right__top__bottom {
+    flex-wrap: wrap;
+  }
+  .about__right__delivery__item {
+    gap: 10px;
+  }
+  .about__right__delivery__item__title__txt {
+    font-size: 14px;
+  }
+  .about__right__delivery__item__date {
+    font-size: 14px;
+  }
+  .about__right__delivery__item__cost {
+    font-size: 14px;
+  }
+  .about__right__comments__cards__card p {
+    font-size: 14px;
+    margin-top: 6px;
+  }
+  .about__right__comments__cards__card h5 {
+    font-size: 14px;
+    margin-top: 6px;
+  }
+  .about__right__comments__cards__card h3 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 400px) {
+  .about__left__charackter__h {
+    font-size: 20px;
+  }
+  .about__left__charackter__list__item__left {
+    width: 40%;
+  }
+  .about__left__charackter__list__item__right {
+    width: 60%;
+  }
+  .about__left__charackter__list p {
+    font-size: 13px;
+  }
+  .about__right__top__bottom {
+    flex-wrap: wrap;
+  }
+  .about__right__delivery__item {
+    gap: 10px;
+  }
+  .about__right__delivery__item__title__txt {
+    font-size: 11px;
+  }
+  .about__right__delivery__item__date {
+    font-size: 11px;
+  }
+  .about__right__delivery__item__cost {
+    font-size: 11px;
+  }
+  .about__right__comments__cards__card {
+    flex-direction: column;
+  }
+  .about__right__comments__cards__card p {
+    font-size: 13px;
+    margin-top: 6px;
+  }
+  .about__right__comments__cards__card h5 {
+    font-size: 13px;
+    margin-top: 6px;
+  }
+  .about__right__comments__cards__card h3 {
+    font-size: 16px;
+  }
+  .about__right__comments__cards__card a {
+    font-size: 12px;
+  }
+}
+@media (max-width: 320px) {
+  .about__right__delivery:first-child {
+    background-color: #333333;
+  }
+  .about__right__delivery__item {
+    gap: 10px;
+  }
+  .about__right__delivery__item__title__txt {
+    font-size: 10px;
+  }
+  .about__right__delivery__item__date {
+    display: none !important;
+  }
+  .about__right__delivery__item__cost {
+    font-size: 10px;
+  }
+  .about__right__comments__cards__card {
+    flex-direction: column;
+  }
+  .about__right__comments__cards__card p {
+    font-size: 13px;
+    margin-top: 6px;
+  }
+  .about__right__comments__cards__card h5 {
+    font-size: 13px;
+    margin-top: 6px;
+  }
+  .about__right__comments__cards__card h3 {
+    font-size: 16px;
+  }
+  .about__right__comments__cards__card a {
+    font-size: 12px;
+  }
+}
+.top__cards__card {
+  display: block !important;
+}
+
+.cheap {
+  margin-top: 100px;
+  box-shadow: 0px 2px 10px rgba(50, 50, 71, 0.14);
+  padding: 20px 20px;
+  border-radius: 4px;
+}
+.cheap__cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.cheap__cards__card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 50%;
+}
+.cheap__cards__card__img {
+  width: 40%;
+}
+.cheap__cards__card__img img {
+  width: 100%;
+}
+.cheap__cards__card__info h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.cheap__cards__card__info p {
+  color: #e93232;
+  margin-top: 10px;
+}
+.cheap__bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.cheap__bottom__right {
+  display: flex;
+  gap: 10px;
+}
+.cheap__bottom__right__cost h3 {
+  font-size: 18px;
+}
+.cheap__bottom__right__cost p {
+  font-size: 14px;
+  color: #06a56c;
+}
+.cheap__bottom__right button {
+  background-color: #06a56c;
+  border: none;
+  color: #fff;
+  padding: 0 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .cheap__cards {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+  }
+  .cheap__cards__card {
+    width: 100%;
+  }
+  .cheap__cards__card__img {
+    width: 50%;
+  }
 }/*# sourceMappingURL=index.css.map */
-
-
