@@ -1,0 +1,130 @@
+footer {
+  background-color: #060f42;
+  * {
+    color: #d9d9d9;
+  }
+  padding: 40px 0 20px 0;
+  .footer {
+    &__top {
+      display: flex;
+      justify-content: space-between;
+      &__links {
+        &__item {
+          font-size: 16px;
+          margin-top: 8px;
+        }
+        h4 {
+          font-size: 20px;
+        }
+      }
+      &__contact {
+        &__social {
+          &__txt {
+            font-size: 20px;
+          }
+          &__images {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+            img {
+              cursor: pointer;
+            }
+          }
+        }
+        &__form {
+          margin-top: 40px;
+          &__txt {
+            font-size: 20px;
+            margin-bottom: 10px;
+          }
+          &__input {
+            padding: 6px;
+            width: 100%;
+            color: #060f42;
+          }
+        }
+      }
+    }
+    &__bottom {
+      border-bottom: 1px solid #d9d9d9;
+      border-top: 1px solid #d9d9d9;
+      margin-top: 50px;
+      padding: 10px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &__logo {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      &__payment {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        img {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer {
+    &__top {
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+    &__bottom {
+      flex-direction: column;
+      justify-content: center;
+      row-gap: 20px;
+      &__logo {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  }
+}
+@media (max-width:550px) {
+  .footer {
+    &__top {
+      flex-wrap: wrap;
+      gap: 30px;
+      &__links {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        gap: 16px;
+        row-gap: 10px;
+        &__item {
+          &:nth-child(1) {
+            width: 100%;
+          }
+        }
+      }
+      &__contact{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        &__social{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            &__txt{
+                width: 100%;
+            }
+            &__images{
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+      }
+    }
+  }
+}

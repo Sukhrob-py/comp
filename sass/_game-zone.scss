@@ -1,0 +1,112 @@
+.game-zone{
+    background-color: #22275E;
+    padding:0 10%;
+    margin: 50px 0 100px;
+    .top{
+        padding: 20px 0;
+        &__top{
+            &__txt{
+                color: #fff;
+            }
+        }
+        &__cards{
+            &__card{
+                background-color: #fff;
+                
+            }
+        }
+    }
+    .category{
+        padding-bottom: 40px;
+        &__top{
+            color: #fff;
+            margin-top: 50px;
+            font-size: 36px;
+        }
+        &__cards{
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            overflow-x: scroll;
+            &::-webkit-scrollbar{
+                width: 0;
+            }
+            &__card{
+                width: 18%;
+                background-color: #fff;
+                width: 120px;
+                height: 120px;
+                min-height: 140px;
+                min-width: 140px;
+                border-radius: 50%;
+                &__img{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        width: 100%;
+                        transform: scale(1.3) translateY(10%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1150px) {
+    .game-zone .top{
+        &__cards{
+            justify-content: space-around;
+            &__card{
+                width: 22%;
+                &:nth-child(1),&:nth-child(2){
+                    display: block;
+                }
+            }
+        }
+    }
+}
+@media (max-width:950px) {
+    .game-zone .top{
+        &__cards{
+            &__card{
+                width: 30%;
+                &:nth-child(3),&:nth-child(4){
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:700px) {
+    .game-zone .top{
+        &__cards{
+            &__card{
+                width: 48%;
+            }
+        }
+    }
+}
+@media (max-width:450px) {
+    .game-zone .top{
+        &__cards{
+            justify-content: center;
+            &__card{
+                width: 80%;
+            }
+        }
+    }
+}
+@media (max-width:320px) {
+    .game-zone .top{
+        &__cards{
+            justify-content: center;
+            &__card{
+                width: 96%;
+            }
+        }
+    }
+}
