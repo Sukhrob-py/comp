@@ -1120,9 +1120,39 @@ footer .footer__bottom__payment img {
     row-gap: 40px;
   }
   .cheap__cards__card {
+    width: 80%;
+  }
+  .cheap__cards__card__img {
+    width: 30%;
+  }
+}
+@media (max-width: 700px) {
+  .cheap__cards {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+  }
+  .cheap__cards__card {
+    width: 90%;
+  }
+  .cheap__cards__card__img {
+    width: 35%;
+  }
+  .cheap__cards__card__info h3 {
+    font-size: 14px;
+  }
+}
+@media (max-width: 550px) {
+  .cheap__cards__card {
     width: 100%;
   }
   .cheap__cards__card__img {
-    width: 50%;
+    width: 40%;
+  }
+  .cheap__cards__card__info {
+    width: 60%;
+  }
+  .cheap__cards__card__info h3 {
+    font-size: 14px;
   }
 }/*# sourceMappingURL=index.css.map */
